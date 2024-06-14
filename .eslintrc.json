@@ -1,13 +1,16 @@
 {
-    "extends": ["airbnb-base", "prettier"],
-    "plugins": ["prettier"],
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "endOfLine": "auto"
-        }
-      ]
-    }
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }]
   }
-  
+}
