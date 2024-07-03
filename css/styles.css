@@ -1,13 +1,14 @@
+/* General styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../images/bg1.png') no-repeat center center fixed;
-    background-size: cover;
+    background: #f0f2f5;
+    color: #333;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: #00563F; /* Lehman Brothers green */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -17,42 +18,100 @@ header {
     z-index: 1000;
 }
 
+header h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 main {
-    margin-top: 195px; /* Increase margin to ensure content starts below the header */
-    margin-bottom: 50px; /* Increase margin to ensure content starts below the header */
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 auto;
-    overflow-y: auto;
+    padding-top: 120px; /* Ensure content starts below the fixed header */
+    padding-bottom: 40px;
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.5);
+section.hero {
+    position: relative;
+    
     color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-home{
+    background: url('../images/bg4.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-about {
+    background: url('../images/bg5.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-contact {
+    background: url('../images/bg3.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hero .overlay {
+    position: absolute;
+    bottom: 20%; /* Adjusted to create a band effect */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px 0;
     text-align: center;
-    padding: 1em 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+section.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content .section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.content h2 {
+    font-weight: 700;
+    margin-top: 0;
+    color: #00563F; /* Lehman Brothers green */
+    border-bottom: 2px solid #00563F;
+    padding-bottom: 10px;
 }
 
 .team-member {
@@ -71,54 +130,54 @@ footer {
 .team-member h3 {
     margin: 0;
     font-size: 1.5em;
+    color: #00563F; /* Lehman Brothers green */
 }
 
 .team-member p {
     margin: 5px 0;
 }
 
-section {
-    margin-bottom: 20px;
+.form-group {
+    margin-bottom: 15px;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #00563F; /* Lehman Brothers green */
 }
 
-ul {
-    padding-left: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form div {
-    margin-bottom: 10px;
-}
-
-form label {
-    font-weight: bold;
-}
-
-form input, form textarea {
+input, textarea {
     width: 100%;
-    padding: 8px;
+    max-width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
 }
 
-form button {
-    padding: 10px 20px;
-    background-color: #333;
+button {
+    background: #00563F; /* Lehman Brothers green */
     color: white;
     border: none;
+    padding: 10px 20px;
+    font-size: 1em;
     border-radius: 4px;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #555;
+button:hover {
+    background: #004c36;
+}
+
+footer {
+    background: #00563F; /* Lehman Brothers green */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }

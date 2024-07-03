@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - DPower.AI</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,39 +19,46 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Contact Information</h2>
-            <p>If you have any questions or inquiries, please reach out to us using the contact information below:</p>
-            <ul>
-                <li>Email: <a href="mailto:info@dpower.ai">info@dpower.ai</a></li>
-                <li>Phone: (123) 456-7890</li>
-                <li>Address: 123 AI Street, Blockchain City, BC 12345</li>
-            </ul>
+        <section class="hero hero-contact">
+            <div class="overlay">
+                <h2>Get in Touch</h2>
+            </div>
         </section>
-        <section>
-            <h2>Contact Form</h2>
-            <form action="https://example.com/submit-form" method="post">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+        <section class="content">
+            <div class="section">
+                <h2>Contact Information</h2>
+                <p>If you have any questions or inquiries, please reach out to us using the contact information below:</p>
+                <ul>
+                    <li>Email: <a href="mailto:info@dpower.ai">info@dpower.ai</a></li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Address: 123 AI Street, Blockchain City, BC 12345</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Contact Form</h2>
+                <form action="https://example.com/submit-form" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 DPower.AI. All rights reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
